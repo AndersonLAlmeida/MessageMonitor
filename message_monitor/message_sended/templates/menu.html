@@ -4,7 +4,7 @@
 
     <head>
 
-        <title>  Blog Coffee Tag </title>
+        <title>  Message Monitor </title>
 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
@@ -17,13 +17,13 @@
 
         <nav class="navbar navbar-dark bg-dark">
             <div class="container">
-              <a class="navbar-brand" href="#">Blog Coffee Tag</a>
+              <a class="navbar-brand" href="#">Message Monitor</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Acesso</h5>
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
@@ -37,12 +37,19 @@
                         </li>
 
                         <li class="nav-item">
-                          <a class="nav-link" href="/tasks">Tasks</a>
+                          <a class="nav-link" href="/dashboard">Dashboard</a>
                         </li>
 
+                        <li class="nav-item">
+                          <a class="nav-link" href="/monitor">Monitor</a>
+                        </li>
 
                         <li class="nav-item">
-                          <a class="nav-link" href="/sair">Sair</a>
+                          <a class="nav-link" href="/add_message">Add Message</a>
+                        </li>
+
+                        <li class="nav-item">
+                          <a class="nav-link" href="/logout">Logout</a>
                         </li>
 
                       {% else %}
@@ -53,14 +60,13 @@
                           </li>
 
                           <li class="nav-item">
-                            <a class="nav-link" href="/sigup">Cadastrar</a>
+                            <a class="nav-link" href="/sigup">Sigup</a>
                           </li>
 
                           <li class="nav-item">
-                            <a class="nav-link" href="/sigin">Logar</a>
+                            <a class="nav-link" href="/sigin">Sigin</a>
                           </li>
-
-                        {% endif %}
+                      {% endif %}
 
 
 

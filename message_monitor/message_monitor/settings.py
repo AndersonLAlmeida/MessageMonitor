@@ -40,6 +40,13 @@ INSTALLED_APPS = [
     'message_sended',
 ]
 
+AUTH_USER_MODEL = 'message_sended.CustomUser'
+
+LOGIN_URL = 'sigin'  # Nome da view para login
+LOGOUT_URL = 'sigup'  # Nome da view para logout
+
+LOGIN_REDIRECT_URL = 'dashboard'  # Nome da view da página inicial após o login
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',

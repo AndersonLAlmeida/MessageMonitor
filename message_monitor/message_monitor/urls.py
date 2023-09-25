@@ -16,14 +16,16 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from message_sended.views import home, sigup, sigin, sair, tasks
+from message_sended.views import sigup, sigin, add_message, dashboard, monitor, home, logout_system
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home, name='home'),
     path('sigup/', sigup, name='sigup'),
     path('sigin/', sigin, name='sigin'),
-    path('sair/', sair, name='sair'),
-    path('tasks/', tasks, name='tasks'),
+    path('logout/', logout_system, name='logout'),
+    path('dashboard/', dashboard, name='dashboard'),
+    path('monitor/', monitor, name='monitor'),
+    path('add_message/', add_message, name='add_message'),
     path('message_sended/', include('message_sended.urls')),  # Inclui as URLs do seu aplicativo
 ]
